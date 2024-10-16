@@ -1,0 +1,162 @@
+//Arrays:
+minmaxvaluefn
+reverse using left<right method
+kadane algo - MAXIMUM SUM SUBARRAY SUM 
+    (cs+=a[i]  if (cs<a[i]) cs=a[i]) if cs>ms : ms=cs
+
+mergerTwoSorted arrays mai while(sizeofArr2>=0) hoga
+movezeroestotheendofthearray
+binary search on sorted arrays
+linear search
+
+
+
+
+
+//LinkedList
+printLL() throws Exception{     {throw new Exception("Can't Print");}  }
+public class ListNode{
+    int data;
+    ListNode next;
+    public ListNode(int data){
+        this.data=data;
+        this.next=null;
+    }
+}
+    //print linked list
+    //fn to print the list in reverse direction
+    //insert node at last
+    //insert node at start
+    //delete last
+    //delete ALWAYS in singly linked list need two pointeres and 1 if we are deleting first node
+    //deleteFirst
+    //length of linkedlist
+    //insert at a given position using one pointer from 1 to n-2 -  check if start  or end pai insert to nhi hona
+    //delete at a givenpostition
+    //delete the first occurence of node with the given data
+    //to find data key_data exist or not as data field in linkedlist
+    //reverseTheLinkedList fn - we need three pointers
+            while(current!=null){
+                nextnode=current.next;
+                current.next=prevnode;
+                prevnode=current;
+                current=nextnode; //we completely destroy head 
+            }
+            head=prevnode;//MOOOST IMPORTAAANT LINE new head
+        
+    //fn to print data field values of mid nodes if even and mid node if odd
+    //fn to get nth node data value from end - in this first traverse temp1 to <n and than both together
+    //fn to insert a data in a sorted LinkedList so that final list is also sorted
+    //fn to create a looped linked list
+    //fn to check whether the linkde list contains loop or not
+        //fn to meet fastptr and smallptr at a point in a loop which can not be the starting point of loop
+        while(fastptr!=null && fastptr.next!=null){
+            slowptr=slowptr.next;
+            fastptr=fastptr.next.next;
+            if (fastptr==slowptr) return true;
+        }
+        return false;
+        //fn to getStarting point of loop given it exist
+        ListNode temp = head;
+        while(temp.next!=slowptr.next){
+            temp=temp.next;
+            slowptr=slowptr.next;
+        }
+        return temp.next.data;
+    }
+    //fn to remove the loop from the linkedlist
+    slowptr.next=null
+
+    //fn to merge two sorted lists
+    while(ptr1!=null && ptr2!=null){} 
+    while(ptr1!=null){}
+    while(ptr2!=null){}
+
+
+
+
+//Circular linked list
+
+    //print linked list
+    //fn to print the list in reverse direction
+    //insert node at last
+    //insert node at start
+    //delete last
+    //deleteFirst
+    //length of linkedlist
+    //insert at a given position
+    //delete at a givenpostition
+    //delete the first occurence of node with the given data
+    //to find data key_data exist or not as data field in linkedlist
+    //reverseTheLinkedList fn for thisi we need three pointers
+        do {
+            nextNode = current.next; 
+            current.next = previous; 
+            previous = current;
+            current = nextNode;
+        } while (current != head); 
+            head.next=previous;      //VERY IMPORTANT LINE
+            head = previous;   
+    //fn to print data field values of mid nodes if even and mid node if odd
+    //fn to get nth node data value from end
+    //fn to insert a data in a sorted LinkedList so that final list is also sorted
+
+
+
+
+
+//Doubly linked list
+public class ListNode{
+    int data;
+    ListNode prev;
+    ListNode next;
+    public ListNode(int data){
+        this.data=data;
+        this.next=null;
+        this.prev=null;
+    }
+}
+    //print
+    //insert node at last
+    //insert node at start
+    //deleteFirst
+    //deleteLasr
+    //length of linkedlist
+    //insert at a given position
+    //delete at a givenpostition - need 1 pointer
+    //delete the first occurence of node with the given data
+    //to find data key_data exist or not as data field in linkedlist
+    //reverseTheLinkedList fn for this we need three pointers
+        while (current != null) {
+            next = current.next;
+            current.next = previous;
+            current.prev = next;
+            previous = current;
+            current = next;
+        }
+        head =  previous;
+    //fn to print data field values of mid nodes if even and mid node if odd
+    //fn to get nth node data value from end - in this first traverse temp1 to <n and than both together
+    //fn to insert a data in a sorted LinkedList so that final list is also sorted
+    //fn to merge two sorted lists
+
+
+
+
+
+
+//doubly circular linked list
+    //reverse - 
+        do {
+            nextNode = current.next;
+            current.next = current.prev; // BEACUSE PREVIOUS WILL NOT BE NULL HERE
+            current.prev = nextNode;
+            previous = current;
+            current = nextNode;
+        } while (current != head);
+        head = previous;
+
+
+
+
+    
